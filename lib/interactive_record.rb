@@ -56,7 +56,12 @@ class InteractiveRecord
     end 
     
     def self.find_by(attr)
-      if attr.keys
+      if attr.keys[0].to_s == "name"
+        
+      else
+        
+      end
+      
     end
     
 
