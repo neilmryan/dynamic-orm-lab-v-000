@@ -56,7 +56,8 @@ class InteractiveRecord
     end 
     
     def self.find_by_grade()
-      
+      sql = "SELECT * FROM #{self.table_name} WHERE grade = ?"
+      DB[:conn].execute(sql, name)
     end
     
     def self.find_by(attr)
