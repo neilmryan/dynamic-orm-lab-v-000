@@ -66,12 +66,7 @@ class InteractiveRecord
     end
     
     def self.find_by(attr)
-      if attr.keys[0].to_s == "name"
-        self.find_by_name(attr[:name])
-      else
-        self.find_by_grade(attr[:grade])
-      end
-      
+
       case attr.keys[0].to_s
       
       when "name"
@@ -81,6 +76,7 @@ class InteractiveRecord
       when "id"
         self.find_by_id(attr[:id])
       end
+      
     end
     
 
