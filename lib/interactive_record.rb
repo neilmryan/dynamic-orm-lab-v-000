@@ -55,6 +55,10 @@ class InteractiveRecord
       DB[:conn].execute(sql, name)
     end 
     
+    def self.find_by_grade()
+      
+    end
+    
     def self.find_by(attr)
       if attr.keys[0].to_s == "name"
         self.find_by_name(attr[:name])
@@ -65,11 +69,11 @@ class InteractiveRecord
       case attr.keys[0].to_s
       
       when "name"
-        
+        self.find_by_name(attr[:name])
       when "grade"
-        
+        self.find_by_name(attr[:grade])
       when "id"
-        
+        self.find_by_name(attr[:grade])
       end
     end
     
