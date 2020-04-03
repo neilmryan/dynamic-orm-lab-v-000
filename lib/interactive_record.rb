@@ -56,7 +56,7 @@ class InteractiveRecord
     end 
     
     def self.find_by(attr)
-      if attr["name"].nil?
+      if attr[:name].nil?
         
       else 
           
