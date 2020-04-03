@@ -61,7 +61,6 @@ class InteractiveRecord
       else
         self.find_by_name(attr[:grade])
       end
-      
     end
     
 
