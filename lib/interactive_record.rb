@@ -2,8 +2,13 @@ require_relative "../config/environment.rb"
 require 'active_support/inflector'
 
 class InteractiveRecord
+<<<<<<< HEAD
 
     def self.table_name
+=======
+  
+      def self.table_name
+>>>>>>> bea8e4a028c379afb87c7e3290ce5824738a481c
       self.to_s.downcase.pluralize
     end
 
@@ -49,5 +54,10 @@ class InteractiveRecord
       DB[:conn].execute(sql)
       @id = DB[:conn].execute("SELECT last_insert_rowid() FROM #{table_name_for_insert}")[0][0]
     end
+<<<<<<< HEAD
 
 end
+=======
+    
+end
+>>>>>>> bea8e4a028c379afb87c7e3290ce5824738a481c
