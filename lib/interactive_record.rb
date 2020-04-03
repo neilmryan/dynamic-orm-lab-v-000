@@ -61,6 +61,16 @@ class InteractiveRecord
       else
         self.find_by_name(attr[:grade])
       end
+      
+      case attr.keys[0].to_s
+      
+      when "name"
+        
+      when "grade"
+        
+      when "id"
+        
+      end
     end
     
 
