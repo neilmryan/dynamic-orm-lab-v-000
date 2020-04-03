@@ -56,15 +56,7 @@ class InteractiveRecord
     end 
     
     def self.find_by(attr)
-      if attr[:name].nil?
-        sql = "SELECT * FROM #{self.table_name} WHERE #{attr[:grade]} = ?"
-        DB[:conn].execute(sql, attr)
-      else 
-        sql = "SELECT * FROM #{self.table_name} WHERE #{attr} = ?"
-      DB[:conn].execute(sql, attr)
-      end
-      sql = "SELECT * FROM #{self.table_name} WHERE #{attr} = ?"
-      DB[:conn].execute(sql, attr)
+      if attr.keys
     end
     
 
