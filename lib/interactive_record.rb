@@ -79,7 +79,7 @@ class InteractiveRecord
       when "grade"
         self.find_by_grade(attr[:grade])
       when "id"
-        self.find_by_id(attr[:grade])
+        self.find_by_id(attr[:id])
       end
     end
     
